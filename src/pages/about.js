@@ -32,7 +32,7 @@ useEffect(()=>{
             ref.current.textContent = latest.toFixed(0)
         }
     })
-},[isInview,value])
+},[springValue,isInview,value])
 
     return <span ref={ref}></span>
 }
@@ -55,11 +55,15 @@ const about = () => {
                             Biography
                         </h2>
                         <p className='my-4 font-medium'>
-                        Hi, I'm Beam Wannasiri, a web developer with a passion for find new opportunity, technology,functional and user-centered digital experiences.</p>
+                        Hi, I&apos;m Beam Wannasiri, a web developer with a passion for find new opportunity, technology,functional and user-centered digital experiences.
+                        </p>
 
-                        <p className='my-4 font-medium'>I'm Fresh graduated student at Thammasat University with a degree in Bachelor of Engineering in Software Engineering</p> 
+                        <p className='my-4 font-medium'>
+                            I&apos;m Fresh graduated student at Thammasat University with a degree in Bachelor of Engineering in Software Engineering
+                        </p> 
 
-                        <p className='my-4 font-medium'>Courses: Software Process, Software Testing and Quality Assurance, Cloud Computing, Advanced System Administration, Database Systems, Electronic Commerce Engineering, Web Application Developments
+                        <p className='my-4 font-medium'>
+                            Courses: Software Process, Software Testing and Quality Assurance, Cloud Computing, Advanced System Administration, Database Systems, Electronic Commerce Engineering, Web Application Developments
                         </p>
                     </div>
                     <div className='relative col-span-3 p-8 border-2 border-solid h-max rounded-2xl border-dark bg-light dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8 '>

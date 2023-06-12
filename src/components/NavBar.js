@@ -81,8 +81,6 @@ const NavBar = () => {
             <motion.a href="https://www.facebook.com/beam.wannasiri/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mr-3 rounded-full bg-light sm:mx-1'><FacebookIcon/></motion.a>
             <motion.a href="https://github.com/jayun-o" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}}  className='w-6 mr-3 rounded-full bg-light dark:bg-dark sm:mx-1'><GithubIcon/></motion.a>
             <motion.a href="https://www.linkedin.com/in/wannasiri-somboon-5887171a3/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mx-3 sm:mx-1'><LinkedInIcon/></motion.a>
-            {/* <motion.a href="/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 mx-3 rounded-full bg-light'><PinterestIcon/></motion.a> */}
-            {/* <motion.a href="/" target={"_blank"} whileHover={{y:-2}} whileTap={{scale:0.9}} className='w-6 ml-3'><DribbbleIcon/></motion.a> */}
             
             <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
