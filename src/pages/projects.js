@@ -103,11 +103,11 @@ const projects = () => {
                     </div>
                     <div className='col-span-6 sm:col-span-12'>
                     <Project
-                        title="Wong Wian Yai"
-                        img={project1}
-                        summary="Built a web application to rate food and restaurants for customers, The system have 2 role as a user(general) and admin for set permission; group project with 3 people using Scrum to get work done, using Katalon Studio as automation testing tool."
-                        link="/"
-                        github="/"
+                        title="Twitter clone full-stack"
+                        img={project2}
+                        summary="Built Twitter clone (React, Tailwind, Next, Prisma, Mongo, NextAuth)"
+                        link="https://twittercloneforeducation-ap38atjap-jayun-o.vercel.app"
+                        github="https://github.com/jayun-o/twitter-clone"
                         type="Featured Project"
                         />
                     </div>
