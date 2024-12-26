@@ -9,6 +9,10 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import TransitionEffect from '@/components/TransitionEffect'
 import project2 from "../../public/images/projects/project-2.png"
+import project3 from "../../public/images/projects/project-3.png"
+import project4 from "../../public/images/projects/project-4.png"
+import project5 from "../../public/images/projects/project-5.png"
+
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({type,title,summary,img,link, github}) =>{
@@ -45,7 +49,7 @@ const FeaturedProject = ({type,title,summary,img,link, github}) =>{
     )
 }
 
-const Project= ({title,type, img, link, github}) =>{
+const Project= ({title,summary,type, img, link, github}) =>{
     return(
         <article className='relative flex flex-col items-center justify-center w-full p-6 border border-solid rounded-2xl border-dark bg-light dark:bg-dark dark:border-light xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light
@@ -64,7 +68,7 @@ const Project= ({title,type, img, link, github}) =>{
                 <Link href={link} target="_blank" className='hover:underline underline-offset-2'>
                     <h2 className='w-full my-2 text-3xl font-bold text-left lg:text-2xl'>{title}</h2>
                 </Link>
-            
+                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
                 <div className='flex items-center justify-between w-full mt-2'>
                     <Link href={link} target="_blank" className='text-lg font-semibold underline md:text-base'>Visit</Link> 
                     <Link href={github} target="_blank" className='w-8 md:w-6'><GithubIcon/></Link> 
@@ -80,7 +84,7 @@ const projects = () => {
   return (
     <>
         <Head>
-            <title>Wannabe | About Page</title>
+            <title>TYP | About Page</title>
             <meta name="description" content='my portfolio'/>
         </Head>
         <TransitionEffect/>
@@ -105,10 +109,103 @@ const projects = () => {
                     <Project
                         title="Twitter clone full-stack"
                         img={project2}
-                        summary="Built Twitter clone (React, Tailwind, Next, Prisma, Mongo, NextAuth)"
+                        summary="Built Twitter clone (React, Tailwind, Next, Prisma, Mongo, NextAuth) funtionality: Authentication system, Notification system,Image Upload using Base64 strings,Prisma ORM with MongoDB,Responsive Layout,
+                            1 To Many Relations (User - Post),
+                            Many To Many Relations (Post - Comment),
+                            Following functionality,
+                            Comments / Replies,
+                            Likes functionality,
+                            Vercel Deployment"
                         link="https://twittercloneforeducation-ap38atjap-jayun-o.vercel.app"
                         github="https://github.com/jayun-o/twitter-clone"
                         type="Featured Project"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                    <Project
+                        title="Cryptocurrency App(Kotlin/Jetpack compose)"
+                        img={project3}
+                        summary={`Built a Cryptocurrency App in Kotlin using Jetpack compose, Koin to handler Dependency injection
+                            The app will list the top 100 cryptocurrencies with their prices and trends, featuring a detail screen with animations and a custom graph. The app is designed to be responsive, working on various screen sizes and orientations.
+                            It uses Material 3 theming with dynamic colors, adjusting to the device's background color. 
+                            The tech stack includes Koin for dependency injection, Ktor client for network requests, KotlinX serialization for JSON parsing, and Jetpack Compose for UI building. 
+                            focus on modern Android app development, addressing common questions about state management, architecture patterns, and library choices
+                            The CoinCap API will be used for data, chosen for its lack of authentication requirements and the material theme was generated using Google's official color generator.`
+                            .split('\n')
+                            .map((line, index) => (
+                                <React.Fragment key={index}>
+                                    {line.trim()}
+                                    <br />
+                                </React.Fragment>
+                            ))}
+
+                        link="https://github.com/jayun-o/Bookpedia.git"
+                        github="https://github.com/jayun-o/Bookpedia.git"
+                        type="Featured Project"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project
+                            title="Dictionary App(Kotlin/Jetpack compose)"
+                            img={project4}
+                            summary={`Building a clean architecture dictionary app using MVVM, Dagger Hilt, Retrofit, and Kotlin, covering essential coding practices and UI development.
+                                Highlights:
+                                🛠️ Clean Architecture: Learn to structure your app for scalability and maintainability.
+                                🔌 Dependency Injection: Use Dagger Hilt for efficient dependency management.
+                                🌐 API Integration: Set up Retrofit for seamless data fetching from external sources.
+                                📦 Data Handling: Understand data transfer objects (DTOs) and mapping to domain models.
+                                📲 User Interface: Create a responsive UI with text fields and icons for an enhanced user experience.
+                                ⚙️ Error Management: Implement error handling and state management using Kotlin coroutines and Flow.
+                                📂 Open Source Access: Project code available on GitHub for further exploration and learning.
+                                Key Insights:
+                                🏗️ MVVM Design Pattern: Emphasizing separation of concerns, the MVVM pattern helps in managing UI-related data in a lifecycle-conscious way, enhancing app responsiveness.
+                                🧩 Dagger Hilt Benefits: Dagger Hilt simplifies dependency injection, making the code cleaner and easier to manage while promoting better testing practices.
+                                🔄 Retrofit for Networking: Utilizing Retrofit enables efficient HTTP requests and responses, handling multiple API interactions seamlessly.
+                                📊 DTO to Domain Mapping: Properly mapping DTOs to domain models is crucial for maintaining a clear data flow and ensuring data integrity throughout the app.
+                                🎨 UI Development: Crafting a visually appealing UI with thoughtful layout design enhances usability and engagement, essential for user satisfaction.
+                                🔍 Search Functionality: Implementing robust search features improves user experience by allowing quick access to word definitions and related information.
+                                📈 Best Practices: Following coding standards and best practices not only improves code readability but also aids in long-term maintenance and collaboration among developers.`
+                                .split('\n')
+                                .map((line, index) => (
+                                    <React.Fragment key={index}>
+                                        {line.trim()}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                            link="https://github.com/jayun-o/CryptoTracker.git"
+                            github="https://github.com/jayun-o/CryptoTracker.git"
+                            type="Featured Project"
+                        />
+                    </div>
+                    <div className='col-span-6 sm:col-span-12'>
+                        <Project
+                            title="Bookpedia App(Kotlin/Jetpack compose/Kotlin multiplatform)"
+                            img={project5}
+                            summary={`Building a “book pedia” app for Android, iOS, and desktop.
+                                Highlights
+                                📱 Cross-Platform Development: building apps for Android, iOS, and desktop using Compose Multiplatform.
+                                🔄 App Features: The “book pedia” app includes API integration, local database usage, animations, and navigation.
+                                🏗️ Clean Architecture: Emphasizes the separation of presentation, domain, and data layers for maintainable code.
+                                🌐 Ktor 3.0: New features in Ktor enhance networking capabilities for Compose Multiplatform applications.
+                                🎨 UI Design: Demonstrates structuring the UI for the book list screen with reusable components.
+                                ⚙️ Dependency Injection: Highlights the use of Koin for managing dependencies in Kotlin Multiplatform projects.
+                                Key Insights
+                                🌍 Multiplatform Strategy: Building a cross-platform app showcases the versatility of Compose Multiplatform, allowing developers to reach users on various devices seamlessly.
+                                🔍 Robust App Features: Integrating a remote API and local database enhances the app’s functionality, providing users with a rich experience while searching for books.
+                                🏗️ Architectural Best Practices: Implementing clean architecture by separating concerns allows for better maintainability, making it easier to update and scale the app.
+                                🚀 Networking Enhancements: Ktor 3.0 introduces significant improvements for networking in apps, streamlining API calls and data handling.
+                                🎨 Reusable Components: Structuring the UI with reusable components fosters better organization and testing practices, leading to a more robust application.
+                                🔗 Effective Dependency Management: Using Koin for dependency injection simplifies managing dependencies, making the codebase more flexible and easier to maintain.`
+                                .split('\n')
+                                .map((line, index) => (
+                                    <React.Fragment key={index}>
+                                        {line.trim()}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                            link="https://github.com/jayun-o/CryptoTracker.git"
+                            github="https://github.com/jayun-o/CryptoTracker.git"
+                            type="Featured Project"
                         />
                     </div>
                 </div>

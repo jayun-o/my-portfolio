@@ -50,8 +50,11 @@ const Skills = () => {
           <Skill name="Figma" x="0vw" y="20vw"/>
           <Skill name="Firebase" x="-25vw" y="18vw"/>
           <Skill name="Tailwind" x="18vw" y="18vw"/>
-          <Skill name="Git" x="-32vw" y="2vw"/>
+          <Skill name="Dart/Flutter" x="-32vw" y="2vw"/>
           <Skill name="Github" x="0vw" y="-21vw"/>
+          <Skill name="Kotlin" x="5vw" y="-16vw"/>
+          <Skill name="Jetpack Compose" x="-26vw" y="-8vw"/>
+
         </div>
     </>
     

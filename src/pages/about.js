@@ -42,7 +42,7 @@ const about = () => {
   return (
     <>
         <Head>
-            <title>Wannabe | About Page</title>
+            <title>Typhoon | About Page</title>
             <meta name="description" content='my portfolio'/>
         </Head>
         <TransitionEffect/>
@@ -55,7 +55,7 @@ const about = () => {
                             Biography
                         </h2>
                         <p className='my-4 font-medium'>
-                        Hi, I&apos;m Beam Wannasiri, a web developer with a passion for find new opportunity, technology,functional and user-centered digital experiences.
+                        Hi, I&apos;m Typhoon Pharita, a web/mobile developer with a passion for find new opportunity, technology,functional and user-centered digital experiences.
                         </p>
 
                         <p className='my-4 font-medium'>
