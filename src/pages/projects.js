@@ -139,8 +139,8 @@ const projects = () => {
                                 </React.Fragment>
                             ))}
 
-                        link="https://github.com/jayun-o/Bookpedia.git"
-                        github="https://github.com/jayun-o/Bookpedia.git"
+                        link="https://github.com/jayun-o/CryptoTracker"
+                        github="https://github.com/jayun-o/CryptoTracker"
                         type="Featured Project"
                         />
                     </div>
