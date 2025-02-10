@@ -150,7 +150,7 @@ const projects = () => {
                             img={project4}
                             summary={`Building a clean architecture dictionary app using MVVM, Dagger Hilt, Retrofit, and Kotlin, covering essential coding practices and UI development.
                                 Highlights:
-                                🛠️ Clean Architecture: Learn to structure your app for scalability and maintainability.
+                                🛠️ Clean Architecture: Learn to structure app for scalability and maintainability.
                                 🔌 Dependency Injection: Use Dagger Hilt for efficient dependency management.
                                 🌐 API Integration: Set up Retrofit for seamless data fetching from external sources.
                                 📦 Data Handling: Understand data transfer objects (DTOs) and mapping to domain models.
@@ -172,8 +172,8 @@ const projects = () => {
                                         <br />
                                     </React.Fragment>
                                 ))}
-                            link="https://github.com/jayun-o/CryptoTracker.git"
-                            github="https://github.com/jayun-o/CryptoTracker.git"
+                            link="https://github.com/jayun-o/Dictionary-App.git"
+                            github="https://github.com/jayun-o/Dictionary-App.git"
                             type="Featured Project"
                         />
                     </div>
@@ -203,8 +203,8 @@ const projects = () => {
                                         <br />
                                     </React.Fragment>
                                 ))}
-                            link="https://github.com/jayun-o/CryptoTracker.git"
-                            github="https://github.com/jayun-o/CryptoTracker.git"
+                            link="https://github.com/jayun-o/Bookpedia.git"
+                            github="https://github.com/jayun-o/Bookpedia.git"
                             type="Featured Project"
                         />
                     </div>
