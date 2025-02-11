@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { LinkArrow } from '@/components/Icon'
 import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
