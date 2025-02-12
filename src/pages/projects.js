@@ -12,6 +12,7 @@ import project2 from "../../public/images/projects/project-2.png"
 import project3 from "../../public/images/projects/project-3.png"
 import project4 from "../../public/images/projects/project-4.png"
 import project5 from "../../public/images/projects/project-5.png"
+import project6 from "../../public/images/projects/project-6.png"
 
 const FramerImage = motion(Image);
 
@@ -207,8 +208,41 @@ const projects = () => {
                             github="https://github.com/jayun-o/Bookpedia.git"
                             type="Featured Project"
                         />
+                        </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                        <Project
+                            title="Todo App(Kotlin/Jetpack compose/Kotlin multiplatform)"
+                            img={project6}
+                            summary={`Build a basic to-do app for Android and iOS using Compose Multiplatform and MongoDB Realm for local database integration.
+                                        Highlights
+                                        📱 Build a to-do app for both Android and iOS.
+                                        📦 Use Compose Multiplatform for shared UI.
+                                        🗂️ Integrate MongoDB Realm as a local database.
+                                        🎨 Create custom Material 3 themes.
+                                        🔄 Implement navigation with Voyager library.
+                                        🖥️ Manage tasks with a ViewModel and state handling.
+                                        ✔️ Test and debug on Android and iOS simulators.
+                                        Key Insights
+                                        📚 Cross-Platform Development: Using Compose Multiplatform allows developers to share UI code between Android and iOS, boosting efficiency and reducing redundancy. This approach is ideal for maintaining consistency across platforms.
+                                        🔒 Local Database with MongoDB Realm: MongoDB Realm offers a robust solution for mobile data persistence, providing seamless integration for both Android and iOS applications. It simplifies data management and enhances performance.
+                                        🎨 Custom Theming: Customizing Material 3 colors allows for a tailored user experience, ensuring that the app aligns with branding and design aesthetics while keeping the interface modern and attractive.
+                                        🔄 Effective Navigation: Implementing the Voyager library for navigation simplifies the process of moving between screens, offering smooth transitions and an intuitive user experience, essential for mobile applications.
+                                        📊 State Management: Utilizing a ViewModel to manage application state ensures that the UI responds dynamically to data changes, improving user engagement and usability while maintaining a clean architecture.
+                                        ⚙️ Testing on Multiple Platforms: Testing applications on both Android and iOS simulators guarantees functionality across devices, identifying platform-specific issues before deployment.
+                                        🛠️ Future Enhancements: There’s potential for further improvements in error handling and user feedback, enhancing the app’s usability and robustness, which is crucial for professional applications.`
+                                .split('\n')
+                                .map((line, index) => (
+                                    <React.Fragment key={index}>
+                                        {line.trim()}
+                                        <br />
+                                    </React.Fragment>
+                                ))}
+                            link="https://github.com/jayun-o/Todo-App.git"
+                            github="https://github.com/jayun-o/Todo-App.git"
+                            type="Featured Project"
+                        />
+                        </div>
                     </div>
-                </div>
             </Layout>
         </main>
     
