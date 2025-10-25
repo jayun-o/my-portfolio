@@ -13,6 +13,7 @@ import project3 from "../../public/images/projects/project-3.png"
 import project4 from "../../public/images/projects/project-4.png"
 import project5 from "../../public/images/projects/project-5.png"
 import project6 from "../../public/images/projects/project-6.png"
+import project7 from "../../public/images/projects/project-7.png"
 
 const FramerImage = motion(Image);
 
@@ -242,10 +243,31 @@ const projects = () => {
                             type="Featured Project"
                         />
                         </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <Project
+                                title="Starbucks App (Kotlin Multiplatform / Compose Multiplatform)"
+                                img={project7}
+                                summary={`Developed a full-featured cross-platform Starbucks E-commerce application using Kotlin Multiplatform and Jetpack Compose Multiplatform, sharing the entire UI layer across Android and iOS.
+                                    The app follows a Clean, Multi-modular Architecture with the MVVM pattern for scalability and maintainability.
+                                    Implemented Firebase Authentication for Email/Password and Google Sign-In, Cloud Firestore for real-time data, Firebase Storage for product images, and Cloud Functions for automated order confirmation emails.
+                                    Integrated PayPal API and Pay on Delivery options for checkout, along with push notifications powered by Firebase Cloud Messaging (FCM).
+                                    Includes an Admin Panel for product management (CRUD operations) and dynamic Material 3 theming.
+                                    Focused on building a production-ready, modern, scalable E-commerce solution with real-world architecture and Firebase backend integration.`  
+                                    .split('\n')
+                                    .map((line, index) => (
+                                        <React.Fragment key={index}>
+                                            {line.trim()}
+                                            <br />
+                                        </React.Fragment>
+                                    ))}
+                                link="https://github.com/jayun-o/starbucks-jetpack-compose.git"
+                                github="https://github.com/jayun-o/starbucks-jetpack-compose.git"
+                                type="Featured Project"
+                            />
+                        </div>
                     </div>
             </Layout>
         </main>
-    
     </>
   )
 }
